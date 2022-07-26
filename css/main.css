@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+.board{
+    width: 90vw;
+    height: 90vw;
+    border: 2px solid;
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    pointer-events: none;
+}
+.cell{
+    border: 1px solid;
+    pointer-events: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.cell:hover{
+    background: rgba(0, 0, 0, 0.099);
+    cursor: pointer;
+}
+.red{
+    color: #fff;
+    background: rgb(195, 12, 12);
+}
+.red:hover{
+    background: rgb(195, 12, 12);
+    color: #fff;
+}
